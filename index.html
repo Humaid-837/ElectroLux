@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero - Section</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>ElectroLux - Luxury Electronics Emporium</title>
+   <link rel="stylesheet" href="ElectroLux.css">
 </head>
+
 <body>
+    <!-- Header Block -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <div class="header__logo-icon">💎</div>
+                ElectroLux
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link nav__link--active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#collections" class="nav__link">Collections</a>
+                        <div class="nav__dropdown"> 
+                            <div class="nav__dropdown-section">
+                                <div class="nav__dropdown-title">Premium Lines</div>
+                                <a href="#" class="nav__dropdown-link">Signature Series</a>
+                                <a href="#" class="nav__dropdown-link">Limited Edition</a>
+                                <a href="#" class="nav__dropdown-link">Exclusive Collection</a>
+                            </div>
+                            <div class="nav__dropdown-section">
+                                <div class="nav__dropdown-title">Categories</div>
+                                <a href="#" class="nav__dropdown-link">Luxury Smartphones</a>
+                                <a href="#" class="nav__dropdown-link">Premium Laptops</a>
+                                <a href="#" class="nav__dropdown-link">High-End Audio</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#exclusive" class="nav__link">Exclusive</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#concierge" class="nav__link">Concierge</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <div class="header__search">
+                    <span class="header__search-icon">🔍</span>
+                    <input type="text" class="header__search-input" placeholder="Search luxury electronics...">
+                </div>
+                <div class="header__user-actions">
+                    <button class="header__action-btn">
+                        ♡
+                        <span class="header__action-badge">5</span>
+                    </button>
+                    <button class="header__action-btn">👤</button>
+                </div>
+                <button class="header__cart">
+                    🛒 Cart
+                    <span class="header__action-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
     <!-- Hero Block -->
     <section class="hero" id="home">
         <div class="hero__floating-elements">
@@ -38,11 +99,10 @@
                     </a>
                 </div>
             </div>
-            
             <div class="hero__visual">
                 <div class="hero__product-showcase">
                     <div class="hero__product-content">
-                        <img src="/placeholder.svg?height=400&width=400" alt="Luxury iPhone"
+                        <img src="Pictures/Apple iPhone 15 Pro 256GB Natural Titanium.jpg" alt="Luxury iPhone"
                             class="hero__product-image">
                         <div class="hero_product-image">
                             <div class="hero__product-info">
@@ -82,5 +142,457 @@
             </div>
         </div>
     </section>
+
+    <!-- Luxury Status Block -->
+    <section class="luxury-stats">
+        <div class="luxury-stats__container">
+            <div class="luxury-stats__grid">
+                <div class="luxury-stat-card">
+                    <div class="luxury-stat-card__icon">👑</div>
+                    <div class="luxury-stat-card__number">25K+</div>
+                    <div class="luxury-stat-card__label">VIP Members</div>
+                </div>
+                <div class="luxury-stat-card">
+                    <div class="luxury-stat-card__icon">💎</div>
+                    <div class="luxury-stat-card__number">500+</div>
+                    <div class="luxury-stat-card__label">Exclusive Products</div>
+                </div>
+                <div class="luxury-stat-card">
+                    <div class="luxury-stat-card__icon">🌍</div>
+                    <div class="luxury-stat-card__number">50+</div>
+                    <div class="luxury-stat-card__label">Global Boutiques</div>
+                </div>
+                <div class="luxury-stat-card">
+                    <div class="luxury-stat-card__icon">⭐</div>
+                    <div class="luxury-stat-card__number">4.9</div>
+                    <div class="luxury-stat-card__label">Luxury Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Categories Block -->
+    <section class="premium-categories" id="collections">
+        <div class="premium-categories__container">
+            <div class="premium-categories__header">
+                <div class="premium-categories__badge">Curated Collections</div>
+                <h2 class="premium-categories__title">Luxury Categories</h2>
+                <p class="premium-categories__subtitle">
+                    Explore our meticulously curated collections of the world's finest electronics, each piece selected
+                    for its exceptional craftsmanship and innovative design.
+                </p>
+            </div>
+            <div class="premium-categories__grid">
+                <div class="premium-category-card">
+                    <div class="premium-category-card__image-container">
+                        <img src="Pictures/premium-laptops.jpg" alt="Luxury Smartphones"
+                            class="premium-category-card__image">
+                        <div class="premium-category-card__overlay">
+                            <div class="premium-category-card__overlay-content">
+                                <div class="premium-category-card__overlay-title">Explore Collection</div>
+                                <button class="premium-category-card__overlay-button">View All</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premium-category-card__content">
+                        <div class="premium-category-card__icon">📱</div>
+                        <h3 class="premium-category-card__title">Luxury Smartphones</h3>
+                        <p class="premium-category-card__description">
+                            Exclusive limited edition smartphones crafted with premium materials like titanium, ceramic,
+                            and sapphire crystal.
+                        </p>
+                        <div class="premium-category-card__meta">
+                            <span class="premium-category-card__count">85+ Exclusive Models</span>
+                            <span class="premium-category-card__arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="premium-category-card">
+                    <div class="premium-category-card__image-container">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Premium Laptops"
+                            class="premium-category-card__image">
+                        <div class="premium-category-card__overlay">
+                            <div class="premium-category-card__overlay-content">
+                                <div class="premium-category-card__overlay-title">Explore Collection</div>
+                                <button class="premium-category-card__overlay-button">View All</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premium-category-card__content">
+                        <div class="premium-category-card__icon">💻</div>
+                        <h3 class="premium-category-card__title">Premium Laptops</h3>
+                        <p class="premium-category-card__description">
+                            High-performance laptops with bespoke configurations, premium materials, and exclusive
+                            design elements.
+                        </p>
+                        <div class="premium-category-card__meta">
+                            <span class="premium-category-card__count">60+ Custom Builds</span>
+                            <span class="premium-category-card__arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="premium-category-card">
+                    <div class="premium-category-card__image-container">
+                        <img src="/placeholder.svg?height=300&width=400" alt="High-End Audio"
+                            class="premium-category-card__image">
+                        <div class="premium-category-card__overlay">
+                            <div class="premium-category-card__overlay-content">
+                                <div class="premium-category-card__overlay-title">Explore Collection</div>
+                                <button class="premium-category-card__overlay-button">View All</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premium-category-card__content">
+                        <div class="premium-category-card__icon">🎧</div>
+                        <h3 class="premium-category-card__title">High-End Audio</h3>
+                        <p class="premium-category-card__description">
+                            Audiophile-grade headphones, speakers, and sound systems from the world's most prestigious
+                            audio brands.
+                        </p>
+                        <div class="premium-category-card__meta">
+                            <span class="premium-category-card__count">120+ Premium Pieces</span>
+                            <span class="premium-category-card__arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="premium-category-card">
+                    <div class="premium-category-card__image-container">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Luxury Wearables"
+                            class="premium-category-card__image">
+                        <div class="premium-category-card__overlay">
+                            <div class="premium-category-card__overlay-content">
+                                <div class="premium-category-card__overlay-title">Explore Collection</div>
+                                <button class="premium-category-card__overlay-button">View All</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premium-category-card__content">
+                        <div class="premium-category-card__icon">⌚</div>
+                        <h3 class="premium-category-card__title">Luxury Wearables</h3>
+                        <p class="premium-category-card__description">
+                            Exclusive smartwatches and wearable technology featuring precious metals and artisan
+                            craftsmanship.
+                        </p>
+                        <div class="premium-category-card__meta">
+                            <span class="premium-category-card__count">45+ Exclusive Pieces</span>
+                            <span class="premium-category-card__arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Products Block -->
+    <section class="exclusive-products" id="products">
+        <div class="exclusive-products__container">
+            <div class="exclusive-products__header">
+                <div class="exclusive-products__title-section">
+                    <h2 class="exclusive-products__title">Exclusive Collection</h2>
+                    <p class="exclusive-products__subtitle">Handpicked luxury electronics available only to our VIP
+                        members</p>
+                </div>
+                <div class="exclusive-products__controls">
+                    <div class="exclusive-products__filters">
+                        <button class="exclusive-products__filter exclusive-products__filter--active">All</button>
+                        <button class="exclusive-products__filter">Limited Edition</button>
+                        <button class="exclusive-products__filter">Signature</button>
+                        <button class="exclusive-products__filter">Bespoke</button>
+                    </div>
+                    <div class="exclusive-products__view-toggle">
+                        <button class="exclusive-products__view-btn exclusive-products__view-btn--active">⊞</button>
+                        <button class="exclusive-products__view-btn">☰</button>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-products__grid">
+                <div class="exclusive-product-card">
+                    <div class="exclusive-product-card__image-container">
+                        <img src="/placeholder.svg?height=350&width=380" alt="iPhone 15 Pro Max Titanium"
+                            class="exclusive-product-card__image">
+                        <div class="exclusive-product-card__badges">
+                            <div class="exclusive-product-card__badge exclusive-product-card__badge--exclusive">
+                                Exclusive</div>
+                            <div class="exclusive-product-card__badge exclusive-product-card__badge--limited">Limited
+                            </div>
+                        </div>
+                        <div class="exclusive-product-card__actions">
+                            <button class="exclusive-product-card__action">♡</button>
+                            <button class="exclusive-product-card__action">⚖</button>
+                            <button class="exclusive-product-card__action">👁</button>
+                        </div>
+                        <button class="exclusive-product-card__quick-view">Quick View</button>
+                    </div>
+                    <div class="exclusive-product-card__content">
+                        <div class="exclusive-product-card__brand">Apple</div>
+                        <h3 class="exclusive-product-card__title">iPhone 15 Pro Max Titanium Edition</h3>
+                        <div class="exclusive-product-card__rating">
+                            <span class="exclusive-product-card__stars">★★★★★</span>
+                            <span class="exclusive-product-card__rating-text">(1,247 VIP reviews)</span>
+                        </div>
+                        <ul class="exclusive-product-card__features">
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Grade 5 Titanium Construction
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                A17 Pro Chip with Enhanced GPU
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Pro Camera System with 5x Zoom
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Exclusive Concierge Support
+                            </li>
+                        </ul>
+                        <div class="exclusive-product-card__price-container">
+                            <div class="exclusive-product-card__price-section">
+                                <span class="exclusive-product-card__price">$1,599</span>
+                                <span class="exclusive-product-card__original-price">$1,799</span>
+                            </div>
+                            <div class="exclusive-product-card__discount">-11%</div>
+                        </div>
+                        <button class="exclusive-product-card__button">
+                            💎 Reserve Now
+                        </button>
+                    </div>
+                </div>
+                <div class="exclusive-product-card">
+                    <div class="exclusive-product-card__image-container">
+                        <img src="/placeholder.svg?height=350&width=380" alt="MacBook Pro Signature"
+                            class="exclusive-product-card__image">
+                        <div class="exclusive-product-card__badges">
+                            <div class="exclusive-product-card__badge exclusive-product-card__badge--exclusive">
+                                Signature</div>
+                        </div>
+                        <div class="exclusive-product-card__actions">
+                            <button class="exclusive-product-card__action">♡</button>
+                            <button class="exclusive-product-card__action">⚖</button>
+                            <button class="exclusive-product-card__action">👁</button>
+                        </div>
+                        <button class="exclusive-product-card__quick-view">Quick View</button>
+                    </div>
+                    <div class="exclusive-product-card__content">
+                        <div class="exclusive-product-card__brand">Apple</div>
+                        <h3 class="exclusive-product-card__title">MacBook Pro 16" M3 Max Signature</h3>
+                        <div class="exclusive-product-card__rating">
+                            <span class="exclusive-product-card__stars">★★★★★</span>
+                            <span class="exclusive-product-card__rating-text">(892 VIP reviews)</span>
+                        </div>
+                        <ul class="exclusive-product-card__features">
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                M3 Max Chip with 40-core GPU
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                128GB Unified Memory
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                8TB SSD Storage
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Custom Engraving Available
+                            </li>
+                        </ul>
+                        <div class="exclusive-product-card__price-container">
+                            <div class="exclusive-product-card__price-section">
+                                <span class="exclusive-product-card__price">$7,999</span>
+                            </div>
+                        </div>
+                        <button class="exclusive-product-card__button">
+                            💎 Configure & Order
+                        </button>
+                    </div>
+                </div>
+                <div class="exclusive-product-card">
+                    <div class="exclusive-product-card__image-container">
+                        <img src="/placeholder.svg?height=350&width=380" alt="Sennheiser Orpheus"
+                            class="exclusive-product-card__image">
+                        <div class="exclusive-product-card__badges">
+                            <div class="exclusive-product-card__badge exclusive-product-card__badge--limited">Ultra Rare
+                            </div>
+                        </div>
+                        <div class="exclusive-product-card__actions">
+                            <button class="exclusive-product-card__action">♡</button>
+                            <button class="exclusive-product-card__action">⚖</button>
+                            <button class="exclusive-product-card__action">👁</button>
+                        </div>
+                        <button class="exclusive-product-card__quick-view">Quick View</button>
+                    </div>
+                    <div class="exclusive-product-card__content">
+                        <div class="exclusive-product-card__brand">Sennheiser</div>
+                        <h3 class="exclusive-product-card__title">HE 1 Orpheus Electrostatic</h3>
+                        <div class="exclusive-product-card__rating">
+                            <span class="exclusive-product-card__stars">★★★★★</span>
+                            <span class="exclusive-product-card__rating-text">(23 Audiophile reviews)</span>
+                        </div>
+                        <ul class="exclusive-product-card__features">
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Electrostatic Transducer Technology
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Marble & Chrome Construction
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Hand-Assembled in Germany
+                            </li>
+                            <li class="exclusive-product-card__feature">
+                                <div class="exclusive-product-card__feature-icon">✓</div>
+                                Only 250 Units Worldwide
+                            </li>
+                        </ul>
+                        <div class="exclusive-product-card__price-container">
+                            <div class="exclusive-product-card__price-section">
+                                <span class="exclusive-product-card__price">$59,995</span>
+                            </div>
+                        </div>
+                        <button class="exclusive-product-card__button">
+                            💎 Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Newsletter Block -->
+    <section class="luxury-newsletter">
+        <div class="luxury-newsletter__container">
+            <h2 class="luxury-newsletter__title">Join the Elite Circle</h2>
+            <p class="luxury-newsletter__subtitle">
+                Become a VIP member and gain exclusive access to limited editions, private sales, and personalized
+                concierge services
+            </p>
+            <form class="luxury-newsletter__form">
+                <input type="email" class="luxury-newsletter__input" placeholder="Enter your email address">
+                <button type="submit" class="luxury-newsletter__button">Join VIP Club</button>
+            </form>
+            <div class="luxury-newsletter__features">
+                <div class="luxury-newsletter__feature">
+                    <span class="luxury-newsletter__feature-icon">👑</span>
+                    VIP Access
+                </div>
+                <div class="luxury-newsletter__feature">
+                    <span class="luxury-newsletter__feature-icon">💎</span>
+                    Exclusive Previews
+                </div>
+                <div class="luxury-newsletter__feature">
+                    <span class="luxury-newsletter__feature-icon">🎁</span>
+                    Private Sales
+                </div>
+                <div class="luxury-newsletter__feature">
+                    <span class="luxury-newsletter__feature-icon">🤝</span>
+                    Personal Concierge
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Footer Block -->
+    <footer class="luxury-footer">
+        <div class="luxury-footer__container">
+            <div class="luxury-footer__content">
+                <div class="luxury-footer__brand">
+                    <div class="luxury-footer__logo">
+                        <div class="luxury-footer__logo-icon">💎</div>
+                        ElectroLux
+                    </div>
+                    <p class="luxury-footer__description">
+                        The world's premier destination for luxury electronics. We curate the finest technology from the
+                        most prestigious brands, offering an unparalleled shopping experience for discerning
+                        connoisseurs.
+                    </p>
+                    <div class="luxury-footer__social">
+                        <a href="#" class="luxury-footer__social-link">📘</a>
+                        <a href="#" class="luxury-footer__social-link">📷</a>
+                        <a href="#" class="luxury-footer__social-link">🐦</a>
+                        <a href="#" class="luxury-footer__social-link">💼</a>
+                        <a href="#" class="luxury-footer__social-link">📺</a>
+                    </div>
+                </div>
+                <div class="luxury-footer__section">
+                    <h3 class="luxury-footer__section-title">Collections</h3>
+                    <ul class="luxury-footer__links">
+                        <li><a href="#" class="luxury-footer__link">Signature Series</a></li>
+                        <li><a href="#" class="luxury-footer__link">Limited Editions</a></li>
+                        <li><a href="#" class="luxury-footer__link">Bespoke Creations</a></li>
+                        <li><a href="#" class="luxury-footer__link">Exclusive Releases</a></li>
+                        <li><a href="#" class="luxury-footer__link">Vintage Classics</a></li>
+                    </ul>
+                </div>
+                <div class="luxury-footer__section">
+                    <h3 class="luxury-footer__section-title">VIP Services</h3>
+                    <ul class="luxury-footer__links">
+                        <li><a href="#" class="luxury-footer__link">Personal Concierge</a></li>
+                        <li><a href="#" class="luxury-footer__link">White Glove Delivery</a></li>
+                        <li><a href="#" class="luxury-footer__link">Expert Consultation</a></li>
+                        <li><a href="#" class="luxury-footer__link">Custom Configuration</a></li>
+                        <li><a href="#" class="luxury-footer__link">VIP Support</a></li>
+                    </ul>
+                </div>
+                <div class="luxury-footer__section">
+                    <h3 class="luxury-footer__section-title">Company</h3>
+                    <ul class="luxury-footer__links">
+                        <li><a href="#" class="luxury-footer__link">About ElectroLux</a></li>
+                        <li><a href="#" class="luxury-footer__link">Our Heritage</a></li>
+                        <li><a href="#" class="luxury-footer__link">Global Boutiques</a></li>
+                        <li><a href="#" class="luxury-footer__link">Careers</a></li>
+                        <li><a href="#" class="luxury-footer__link">Press Center</a></li>
+                    </ul>
+                </div>
+                <div class="luxury-footer__section">
+                    <h3 class="luxury-footer__section-title">Stay Connected</h3>
+                    <div class="luxury-footer__newsletter">
+                        <div class="luxury-footer__newsletter-title">VIP Updates</div>
+                        <form class="luxury-footer__newsletter-form">
+                            <input type="email" class="luxury-footer__newsletter-input" placeholder="Your email">
+                            <button type="submit" class="luxury-footer__newsletter-button">Subscribe</button>
+                        </form>
+                    </div>
+                    <ul class="luxury-footer__links">
+                        <li><a href="#" class="luxury-footer__link">Luxury Blog</a></li>
+                        <li><a href="#" class="luxury-footer__link">Tech Insights</a></li>
+                        <li><a href="#" class="luxury-footer__link">Collector's Guide</a></li>
+                        <li><a href="#" class="luxury-footer__link">VIP Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="luxury-footer__bottom">
+                <p>&copy; 2024 ElectroLux. All rights reserved.</p>
+                <div class="luxury-footer__legal">
+                    <a href="#" class="luxury-footer__legal-link">Privacy Policy</a>
+                    <a href="#" class="luxury-footer__legal-link">Terms of Service</a>
+                    <a href="#" class="luxury-footer__legal-link">VIP Terms</a>
+                    <a href="#" class="luxury-footer__legal-link">Cookie Policy</a>
+                </div>
+                <div class="luxury-footer__payment">
+                    <span class="luxury-footer__payment-text">Accepted Payments:</span>
+                    <div class="luxury-footer__payment-icons">
+                        <div class="luxury-footer__payment-icon">AMEX</div>
+                        <div class="luxury-footer__payment-icon">VISA</div>
+                        <div class="luxury-footer__payment-icon">MC</div>
+                        <div class="luxury-footer__payment-icon">PP</div>
+                        <div class="luxury-footer__payment-icon">BTC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
 </body>
+
 </html>
+
+
+
+
